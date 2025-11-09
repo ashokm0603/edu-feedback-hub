@@ -1,0 +1,157 @@
+/* Feedback List Container */
+.feedback-list-container {
+  max-width: 95%;
+  margin: 60px 10%;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding-top: 80px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Heading */
+.feedback-list-container h2 {
+  color: #00796b;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Responsive Table Wrapper */
+.feedback-table-wrapper {
+  width: 100%;
+  overflow-x: auto; /* Enables horizontal scroll for small screens */
+}
+
+/* Table */
+.feedback-list-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 16px;
+  background: #f9f9f9;
+}
+
+/* Table Headers */
+.feedback-list-container th {
+  background: #00796b;
+  color: white;
+  padding: 12px;
+  text-align: left;
+  white-space: nowrap; /* Prevents header text from wrapping */
+}
+
+/* Table Rows */
+.feedback-list-container td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Alternate Row Colors */
+.feedback-list-container tr:nth-child(even) {
+  background: #e0f2f1;
+}
+
+/* Hover Effect */
+.feedback-list-container tr:hover {
+  background: #b2dfdb;
+  transition: 0.3s ease-in-out;
+}
+
+/* No Data Message */
+.feedback-list-container p {
+  font-size: 18px;
+  color: #555;
+  padding: 20px;
+  font-weight: bold;
+}
+
+/* Back Button */
+#back-btn {
+  padding: 10px 50px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 5px 5px 5px black;
+  background-color: #fff8dc;
+  margin-top: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+#back-btn:hover {
+  background-color: aliceblue;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* ✅ Mobile & Tablet Responsive Design */
+@media (max-width: 768px) {
+  .feedback-list-container {
+    padding: 15px;
+  }
+
+  /* Make Table Scrollable */
+  .feedback-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .feedback-list-container table {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .feedback-list-container th,
+  .feedback-list-container td {
+    padding: 8px;
+  }
+
+  /* Adjust Back Button for Small Screens */
+  #back-btn {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback-list-container h2 {
+    font-size: 20px;
+  }
+
+  .feedback-list-container table {
+    font-size: 12px;
+  }
+
+  .feedback-list-container th,
+  .feedback-list-container td {
+    padding: 6px;
+  }
+
+  #back-btn {
+    font-size: 14px;
+    padding: 7px 15px;
+  }
+}
+
+/* Image Styling */
+.feedback-list-container img {
+  max-width: 100%; /* Ensures image does not exceed its container */
+  height: auto; /* Maintains aspect ratio */
+  display: block;
+  margin: 0 auto; /* Centers the image */
+}
+
+/* ✅ Mobile & Tablet Responsive Design */
+@media (max-width: 768px) {
+  .feedback-list-container img {
+    width: 80%; /* Shrinks image to 80% of the container */
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback-list-container img {
+    width: 60%; /* Further reduces image size on smaller devices */
+  }
+}
